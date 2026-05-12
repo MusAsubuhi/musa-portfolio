@@ -1,0 +1,482 @@
+ :root {
+    --navy: #0a0f2c;
+    --blue: #0066ff;
+    --gold: #f0c040;
+    --light-bg: #f4f7fc;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --text-muted: #a0b0c8;
+    --white: #ffffff;
+    --radius: 15px;
+    --shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-dark);
+    background-color: var(--white);
+}
+
+/* NAVIGATION */
+header {
+    background-color: var(--navy);
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+nav h1 {
+    color: var(--white);
+    font-size: 22px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: var(--white);
+}
+
+/* HERO */
+#hero {
+  background: linear-gradient(135deg, var(--navy) 0%, #0d1f5c 100%);
+  color: var(--white);
+  text-align: center;
+  padding: 120px 20px;
+}
+
+#hero h2 {
+  font-size: 48px;
+  color: var(--white);
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+#hero p {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin: 20px auto 40px auto;
+  line-height: 1.8;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ABOUT */
+#about {
+  padding: 100px 40px;
+  background-color: var(--light-bg);
+}
+
+.about-content {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--blue);
+}
+
+.about-text h2 {
+  font-size: 36px;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 36px;
+  color: var(--blue);
+}
+
+.stat p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 5px;
+}
+
+/* VENTURES */
+#ventures {
+  padding: 100px 40px;
+  text-align: center;
+  background-color: var(--white);
+}
+
+#ventures h2 {
+  font-size: 36px;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: var(--text-light);
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  line-height: 1.8;
+}
+
+.ventures-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.venture-card {
+  background-color: var(--light-bg);
+  border-radius: var(--radius);
+  padding: 35px 25px;
+  text-align: left;
+  border-top: 4px solid var(--blue);
+  box-shadow: var(--shadow);
+}
+
+.venture-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.venture-tag {
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.venture-card h3 {
+  color: var(--navy);
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.venture-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.venture-card a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* CONTACT */
+#contact {
+  padding: 100px 40px;
+  background: linear-gradient(135deg, var(--navy) 0%, #0d1f5c 100%);
+  text-align: center;
+  color: var(--white);
+}
+
+#contact h2 {
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+/* FOOTER */
+footer {
+  background-color: #060a1a;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  #hero h2 {
+    font-size: 32px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-stats {
+    justify-content: center;
+  }
+
+  .ventures-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #about,
+  #ventures,
+  #contact {
+    padding: 60px 20px;
+  }
+}
+
+/* VENTURES PAGE */
+#ventures-hero {
+  background: linear-gradient(135deg, var(--navy) 0%, #0d1f5c 100%);
+  color: var(--white);
+  text-align: center;
+  padding: 100px 40px;
+}
+
+#ventures-hero h2 {
+  font-size: 48px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+#ventures-hero p {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+#ventures-detail {
+  padding: 100px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.venture-detail-card {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  background-color: var(--light-bg);
+  border-radius: var(--radius);
+  padding: 50px;
+  margin-bottom: 30px;
+  border-left: 5px solid var(--blue);
+  box-shadow: var(--shadow);
+}
+
+.venture-detail-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  min-width: 120px;
+}
+
+.venture-detail-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.venture-detail-right h3 {
+  font-size: 28px;
+  color: var(--navy);
+  margin-bottom: 15px;
+}
+
+.venture-detail-right p {
+  font-size: 16px;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* CONTACT PAGE */
+#contact-hero {
+  background: linear-gradient(135deg, var(--navy) 0%, #0d1f5c 100%);
+  color: var(--white);
+  text-align: center;
+  padding: 100px 40px;
+}
+
+#contact-hero h2 {
+  font-size: 48px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+#contact-hero p {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+#contact-details {
+  padding: 100px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.contact-card {
+  background-color: var(--light-bg);
+  border-radius: var(--radius);
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--blue);
+}
+
+.contact-card h3 {
+  font-size: 20px;
+  color: var(--navy);
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* CONTACT FORM */
+.contact-form {
+  background-color: var(--light-bg);
+  border-radius: var(--radius);
+  padding: 50px;
+  box-shadow: var(--shadow);
+}
+
+.contact-form h2 {
+  font-size: 32px;
+  color: var(--navy);
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--text-dark);
+  font-family: Arial, sans-serif;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--blue);
+}
+
+/* MOBILE RESPONSIVE - NEW PAGES */
+@media (max-width: 768px) {
+  .venture-detail-card {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .venture-detail-left {
+    flex-direction: row;
+    min-width: unset;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 30px 20px;
+  }
+
+  #ventures-detail,
+  #contact-details {
+    padding: 60px 20px;
+  }
+}
