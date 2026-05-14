@@ -25,56 +25,34 @@
     </section>
 
     <section id="contact-details">
-      <div class="contact-grid">
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder = "Enter your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder = "Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder = "What is this about">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+               <textarea id="message" name="message" rows="6" placeholder = "Write your message here..."></textarea>
+            </div>
+            <button type="submit" class="button">Send Message</button>
 
-        <div class="contact-card">
-          <h3>📧 Email</h3>
-          <p>For business enquiries, partnerships and collaborations.</p>
-          <a class="button" href="mailto:musasubuhi@gmail.com">Shoot Me an Email</a>
-        </div>
-
-        <div class="contact-card">
-          <h3>📍 Location</h3>
-          <p>Based in Mombasa, Kenya — building for Africa.</p>
-          <a class="button" href="https://maps.google.com/?q=Mombasa,Kenya" target="_blank">Find Me on Map</a>
-        </div>
-
-        <div class="contact-card">
-          <h3>🌍 Ventures</h3>
-          <p>Interested in one of my businesses specifically?</p>
-          <a class="button" href="ventures.html">See My Ventures</a>
-        </div>
-
-      </div>
-
-      <div class="contact-form">
-        <h2>Send a Message</h2>
-        <form>
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" placeholder="Enter your name">
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" placeholder="Enter your email">
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" placeholder="What is this about?">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="6" placeholder="Write your message here..."></textarea>
-          </div>
-          <button type="submit" class="button">Send Message</button>
         </form>
-      </div>
-
     </section>
+    
 
     <footer>
       <p>© 2026 Musa | Built by me, with my own hands.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>
